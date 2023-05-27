@@ -27,6 +27,11 @@ text-align: center;
   border-radius: 5px;
 }
 
+.card-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 .span {
   width: 10px;
   height: 10px;

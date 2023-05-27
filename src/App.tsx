@@ -29,6 +29,7 @@ function App() {
         if (items[index].hasItem){
             itemCopy.classSpan = 'span span-true';
         }
+
         itemCopy.clicked = true;
         itemCopy.class = 'card card-open';
         itemsCopy[index] = itemCopy;
@@ -38,10 +39,25 @@ function App() {
             numberCopy.number = numberCopy.number + 1;
             setNumber(numberCopy);
         }
+
+        if (items[index].hasItem) {
+            alert("you win");
+            const itemsCopy2 = itemsCopy.map(item => ({
+                ...item,
+                disabled: true
+            }));
+            if (itemsCopy2.every(item=> item.disabled)) {
+               itemsCopy2.forEach(item => {
+                   item.class = 'card card-disabled';
+               });
+            }
+            setItems(itemsCopy2);
+        }
+
     };
 
     const buttonReset = () => {
-        setItems(createItems)
+        setItems(createItems())
         setNumber({number: 0})
     };
 

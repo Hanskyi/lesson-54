@@ -16,6 +16,7 @@ const Cards: React.FC<IProps> = ({items, onClickItem}) => {
                         onClickItem={() => onClickItem(item.id)}
                         class={item.class}
                         spanClass={item.classSpan}
+                        disabled ={item.disabled}
                     />
                 )
             )}

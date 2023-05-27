@@ -3,5 +3,6 @@ export interface IItemType {
     clicked: boolean,
     id: string,
     class: string,
-    classSpan: string
+    classSpan: string,
+    disabled?: boolean;
 }
