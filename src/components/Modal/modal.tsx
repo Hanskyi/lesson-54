@@ -1,10 +1,10 @@
 import React from 'react';
-import './modal.css'
+import './modal.css';
 
 interface IProps {
     active?: boolean,
-    setActive?: React.Dispatch<React.SetStateAction<boolean>>
-    number?: number
+    setActive?: React.Dispatch<React.SetStateAction<boolean>>,
+    number?: number,
 }
 
 const Modal: React.FC<IProps> = ({active, setActive, number}) => {

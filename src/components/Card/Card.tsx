@@ -3,10 +3,10 @@ import './Cards';
 import './card.css';
 
 interface IProps {
-    onClickItem?: React.MouseEventHandler<HTMLDivElement>
-    class?: string
-    spanClass?: string
-    disabled?: boolean
+    onClickItem?: React.MouseEventHandler<HTMLDivElement>,
+    class?: string,
+    spanClass?: string,
+    disabled?: boolean,
     hasItem?: boolean
 }
 const Card:React.FC<IProps> = (props) => {

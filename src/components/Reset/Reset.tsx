@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface IProps {
-    buttonReset: React.MouseEventHandler
+    buttonReset: React.MouseEventHandler,
 }
 const Reset: React.FC<IProps> = ({buttonReset}) => {
     return (

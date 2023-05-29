@@ -8,10 +8,9 @@ import './App.css';
 import Modal from "./components/Modal/modal";
 
 const createItems = () => {
-    const items: IItemType[] = [];
-    for (let i = 0; i < 36; i++) {
-        items.push({hasItem: false, clicked: false, id: nanoid(7), class: 'card', classSpan: 'span'});
-    }
+    const items: IItemType[]= Array.from({length: 36}, ()=> ({
+        hasItem: false, clicked: false, id: nanoid(7), class: 'card', classSpan: 'span'
+    }));
     const index = Math.floor(Math.random() * items.length);
     items[index].hasItem = true;
     return items;
@@ -21,7 +20,7 @@ const createItems = () => {
 function App() {
     const [items, setItems] = useState(createItems());
     const [number, setNumber] = useState({number: 0});
-    const [modalActive, setModalActive]= useState(false)
+    const [modalActive, setModalActive]= useState(false);
 
     const onClickItem = (id: string) => {
         const index = items.findIndex(item => item.id === id);
@@ -56,7 +55,6 @@ function App() {
             }
             setItems(itemsCopy2);
         }
-
     };
 
     const buttonReset = () => {

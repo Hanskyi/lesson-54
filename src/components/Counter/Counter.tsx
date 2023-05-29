@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface IProps {
-    number: {number: number}
+    number: {number: number},
 }
 const Counter: React.FC<IProps> = ({number}) => {
     return (

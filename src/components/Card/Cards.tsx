@@ -1,7 +1,7 @@
 import React from 'react';
 import {IItemType} from "../../types.d";
 import Card from "./Card";
-import './cards.css'
+import './cards.css';
 
 interface IProps {
     items:  IItemType[],
