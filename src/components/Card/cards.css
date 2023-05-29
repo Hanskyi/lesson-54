@@ -1,0 +1,12 @@
+.container {
+    text-align: center;
+    display: flex;
+    margin: 100px auto 0;
+    width: 260px;
+    height: 260px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    border: 5px solid black;
+    background-color: green;
+}

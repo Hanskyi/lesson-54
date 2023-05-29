@@ -1,45 +1,7 @@
+body {
+  background-color: aqua;
+}
+
 .App {
-text-align: center;
-}
-
-.container {
   text-align: center;
-  display: flex;
-  margin: 20px auto 0;
-  width: 260px;
-  height: 260px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.card {
-  background-color: black;
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  display: flex;
-}
-
-.card-open {
-  opacity: 0.5;
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-}
-
-.card-disabled {
-  pointer-events: none;
-  opacity: 0.5;
-}
-
-.span {
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  margin: auto;
-  display: none;
-}
-
-.span-true {
-  display: block;
 }
